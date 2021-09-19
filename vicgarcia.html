@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta content="width=device-width" name="viewport">
+	<title>UNDER CONSTRUCTION</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+		body{ 
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			background: black;
+			color: #fff;
+			font-size: 108px;
+			font-family: 'Helvetica New', monospace;
+			letter-spacing: -7px;
+			margin-top: -15%;
+		}
+		#anima{
+			animation: glitch 1s linear infinite;
+		}
+		#topleft{
+			color: palevioletred;
+			font-size: 20px;
+			font-family: Helvetica Neue;
+			font-weight: bold;
+			position:absolute;
+			left:0;
+			top:0;
+			letter-spacing: 1px;
+			margin-top: 10%;
+			margin-left: 1%;
+		}
+		#logo{
+			max-width: 15%;
+		   	max-height: 30%;
+			display: block;
+		  	margin-left: auto;
+		  	margin-right: auto;
+		  	width: 50%;
+		}
+		img{
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+		}
+
+		a {
+  			color: inherit;
+  			text-decoration: none;
+		}
+
+		@keyframes glitch{
+		  2%,64%{
+		    transform: translate(2px,0) skew(0deg);
+		  }
+		  4%,60%{
+		    transform: translate(-2px,0) skew(0deg);
+		  }
+		  62%{
+		    transform: translate(0,0) skew(5deg); 
+		  }
+		}
+
+		#anima:before,
+		#anima:after{
+		  content: attr(title);
+		  position: absolute;
+		  left: 0;
+		}
+
+		#anima:before{
+		  animation: glitchTop 1s linear infinite;
+		  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+		  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+		}
+
+		@keyframes glitchTop{
+		  2%,64%{
+		    transform: translate(2px,-2px);
+		  }
+		  4%,60%{
+		    transform: translate(-2px,2px);
+		  }
+		  62%{
+		    transform: translate(13px,-1px) skew(-13deg); 
+		  }
+		}
+
+		#anima:after{
+		  animation: glitchBotom 1.5s linear infinite;
+		  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+		  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+		}
+
+		@keyframes glitchBotom{
+		  2%,64%{
+		    transform: translate(-2px,0);
+		  }
+		  4%,60%{
+		    transform: translate(-2px,0);
+		  }
+		  62%{
+		    transform: translate(-22px,5px) skew(21deg); 
+		  }
+		}
+		@media screen and (max-width: 1024px) {
+				body{
+					font-size: 70px;
+				}
+				#logo{
+					max-width: 15%;
+				   	max-height: 30%;
+					display: block;
+				  	margin-left: auto;
+				  	margin-right: auto;
+				  	width: 50%;
+				}
+				#topleft{
+					color: palevioletred;
+					font-size: 16px;
+					font-family: Helvetica Neue;
+					font-weight: bold;
+					position:absolute;
+					left:0;
+					top:0;
+					letter-spacing: 1px;
+					margin-top: 10%;
+					margin-left: 1%;
+				}
+		}
+		@media screen and (max-width: 768px) {
+				body{
+					font-size: 60px;
+				}
+				#logo{
+					max-width: 18%;
+				   	max-height: 38%;
+					display: block;
+				  	margin-left: auto;
+				  	margin-right: auto;
+				  	width: 50%;
+				}
+				#topleft{
+					color: palevioletred;
+					font-size: 16px;
+					font-family: Helvetica Neue;
+					font-weight: bold;
+					position:absolute;
+					left:0;
+					top:0;
+					letter-spacing: 1px;
+					margin-top: 10%;
+					margin-left: 1%;
+				}
+		}
+		@media screen and (max-width: 480px) {
+				body{
+					font-size: 20px;
+					letter-spacing: 0.75px;
+				}
+
+				#logo{
+					max-width: 30%;
+				   	max-height: 60%;
+					display: block;
+				  	margin-left: auto;
+				  	margin-right: auto;
+				  	width: 50%;
+				}
+				#topleft{
+					color: palevioletred;
+					font-size: 13px;
+					font-family: Helvetica Neue;
+					font-weight: bold;
+					position:absolute;
+					left:0;
+					top:0;
+					letter-spacing: 1px;
+					margin-top: 35%;
+					margin-left: 1%;
+				}
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="topleft">
+		
+		<a href=landing_page.html>home</a>
+		
+		
+	</div>
+	<div id="anima" title="UNDER CONSTRUCTION">UNDER CONSTRUCTION </div>
+	<img id="logo" src="the_studio_branding_square_knocked_out.png"></img>
+	
+</body>
+</html>

@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<title>The Studio</title>
+	<style>
+	
+	.menu-text{
+		color: pink;
+		font-size:44;
+		font-weight: bolder;
+		font-family: helvetica new;
+	}
+	.contact-text{
+		color: white;
+		font-size: 44;
+	}
+
+	.thick-black-border{
+		border-color: black;
+		border-width: 4px;
+		border-style: solid;
+
+		/* Shorthand to write border*/
+		border: black 2px thick;
+		border-radius: 10%;
+	}
+	body{
+		background-color: black;
+		font-family: Bookman;
+	}
+	ul{
+		margin: 0px;
+	}
+
+	figcaption{
+		margin-left: 250px;
+	}
+
+	a {
+  		color: inherit;
+  		text-decoration: none;
+	}
+
+
+	#header1 {
+		padding: 5px;
+  		text-align: center;
+  		background-color: black;
+  		font-size: 10px;
+  		font-family: 'Orbitron', serif;
+  		color: yellow;
+		display: inline-block;
+	}
+    #header2 {
+        padding: 5px;
+        text-align: center;
+        background-color: black;
+        font-size: 10px;
+        font-family: 'Orbitron', serif;
+        color: yellow;
+        display: inline-block;
+    }
+	#logo{
+		max-width: 300px;
+   	 	max-height: 300px;
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+	}
+
+	#centerimage{
+		color: white;
+		font-size: 20px;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+    	left: 0;
+	    line-height: 0px;
+	    margin-top: 300px;
+	    position: relative;
+	    text-align: center;
+	    top: 50%;
+	    width: 100%;
+	}
+
+	#cityimage {
+    	max-width: 40%;
+   	 	max-height: 550px;
+		position: relative;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		margin-top: -500px;
+	}
+
+	#footer{
+		color: white;
+		font-size: 18px;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		position: absolute;
+        bottom: 0;
+        left: 15px;
+        margin-bottom: 10px;
+
+	}
+
+	#topright{
+		color: white;
+		font-size: 20px;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		position: relative;
+        float: right;
+        margin-top: -15%;
+        margin-right: 2%;
+	}
+
+	#topleft{
+		color: palevioletred;
+		font-size: 20px;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		position: relative;
+		float: left;
+		margin-top: -200px;
+		margin-left: 2%;
+	}
+
+	 .marquee {
+            height: 50px;
+            position: relative;
+            behavior: slide;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 10s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+	
+
+
+.container{
+    font-family:Cambria;
+    font-weight: bold;
+    width: 600px;
+    margin: 30px auto;
+    h1{
+        box-sizing: border-box;
+        font-size: 72px;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        border-top: 5px solid #000;
+        border-bottom: 5px solid #000;
+    }
+    .timeZoneLA{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneMexicoCity{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneNewYork{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLondon{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneRiyadh{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneTokyo{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneHonolulu{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLA2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneMexicoCity2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneNewYork2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLondon2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneRiyadh2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneTokyo2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneHonolulu2{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLA3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneMexicoCity3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneNewYork3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLondon3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneRiyadh3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneTokyo3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneHonolulu3{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLA4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneMexicoCity4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneNewYork4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLondon4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneRiyadh4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneTokyo4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneHonolulu4{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLA5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneMexicoCity5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneNewYork5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneLondon5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneRiyadh5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneTokyo5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+    .timeZoneHonolulu5{
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #000;
+        tr{
+            border-bottom: 1px solid #000;
+        }
+        td{
+            padding:10px 5%;
+            vertical-align: top;
+            width: 50%;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .time{
+            font-size: 72px;
+            text-align: center;
+            font-style: normal;
+        }
+        .bg_dark{
+            color: white;
+            background: white;
+        }
+    }
+}
+</style>
+</head>
+
+
+<body>
+	
+	<marquee behavior="scroll" direction="left" scrollamount="7">
+	<div id="header1">
+		LOS ANGELES<br>
+		<div class="timeZone">
+    </div>
+	</div>
+	<div id="header2">
+		MEXICO CITY<br>
+		<div class="timeZoneMexicoCity">
+    </div>
+	</div>
+	<div id="header">
+		NEW YORK<br>
+		<div class="timeZoneNewYork">
+    </div>
+	</div>
+	<div id="header">
+		LONDON<br>
+		<div class="timeZoneLondon">
+    </div>
+	</div>
+	<div id="header">
+		RIYADH<br>
+		<div class="timeZoneRiyadh">
+    </div>
+	</div>
+	<div id="header">
+		TOKYO<br>
+		<div class="timeZoneTokyo">
+    </div>
+	</div>
+	<div id="header">
+		HONOLULU<br>
+		<div class="timeZoneHonolulu">
+    </div>
+	</div>
+	<div id="header">
+		LOS ANGELES<br>
+		<div class="timeZoneLA2">
+    </div>
+	</div>
+	<div id="header">
+		MEXICO CITY<br>
+		<div class="timeZoneMexicoCity2">
+    </div>
+	</div>
+	<div id="header">
+		NEW YORK<br>
+		<div class="timeZoneNewYork2">
+    </div>
+	</div>
+	<div id="header">
+		LONDON<br>
+		<div class="timeZoneLondon2">
+    </div>
+	</div>
+	<div id="header">
+		RIYADH<br>
+		<div class="timeZoneRiyadh2">
+    </div>
+	</div>
+	<div id="header">
+		TOKYO<br>
+		<div class="timeZoneTokyo2">
+    </div>
+	</div>
+	<div id="header">
+		HONOLULU<br>
+		<div class="timeZoneHonolulu2">
+    </div>
+	</div>
+	<div id="header">
+		LOS ANGELES<br>
+		<div class="timeZoneLA3">
+    </div>
+	</div>
+	<div id="header">
+		MEXICO CITY<br>
+		<div class="timeZoneMexicoCity3">
+    </div>
+	</div>
+	<div id="header">
+		NEW YORK<br>
+		<div class="timeZoneNewYork3">
+    </div>
+	</div>
+	<div id="header">
+		LONDON<br>
+		<div class="timeZoneLondon3">
+    </div>
+	</div>
+	<div id="header">
+		RIYADH<br>
+		<div class="timeZoneRiyadh3">
+    </div>
+	</div>
+	<div id="header">
+		TOKYO<br>
+		<div class="timeZoneTokyo3">
+    </div>
+	</div>
+	<div id="header">
+		HONOLULU<br>
+		<div class="timeZoneHonolulu3">
+    </div>
+	</div>
+	<div id="header">
+		LOS ANGELES<br>
+		<div class="timeZoneLA4">
+    </div>
+	</div>
+	<div id="header">
+		MEXICO CITY<br>
+		<div class="timeZoneMexicoCity4">
+    </div>
+	</div>
+	<div id="header">
+		NEW YORK<br>
+		<div class="timeZoneNewYork4">
+    </div>
+	</div>
+	<div id="header">
+		LONDON<br>
+		<div class="timeZoneLondon4">
+    </div>
+	</div>
+	<div id="header">
+		RIYADH<br>
+		<div class="timeZoneRiyadh4">
+    </div>
+	</div>
+	<div id="header">
+		TOKYO<br>
+		<div class="timeZoneTokyo4">
+    </div>
+	</div>
+	<div id="header">
+		HONOLULU<br>
+		<div class="timeZoneHonolulu4">
+    </div>
+	</div>
+	<div id="header">
+		LOS ANGELES<br>
+		<div class="timeZoneLA5">
+    </div>
+	</div>
+	<div id="header">
+		MEXICO CITY<br>
+		<div class="timeZoneMexicoCity5">
+    </div>
+	</div>
+	<div id="header">
+		NEW YORK<br>
+		<div class="timeZoneNewYork5">
+    </div>
+	</div>
+	<div id="header">
+		LONDON<br>
+		<div class="timeZoneLondon5">
+    </div>
+	</div>
+	<div id="header">
+		RIYADH<br>
+		<div class="timeZoneRiyadh5">
+    </div>
+	</div>
+	<div id="header">
+		TOKYO<br>
+		<div class="timeZoneTokyo5">
+    </div>
+	</div>
+	<div id="header">
+		HONOLULU<br>
+		<div class="timeZoneHonolulu5">
+    </div>
+	</div>
+</marquee>
+
+	<img id="logo" src="the_studio_branding_square_knocked_out.png"></img>
+	<div id="topright">
+
+		<a href="vicgarcia.html"> VIC GARCIA </a>
+		
+	</div>
+		<div id="topleft">
+		<a>home</a>
+		<br>
+		<a href=rsvp.html>rsvp</a>
+		
+		
+	</div>
+	<!-- <div id="logo">
+		<br><br><br><br><br><img id="logo" src="the_studio_branding-03.png"></img>
+
+		
+		
+		<font style="font-family: Helvetica Neue; font-weight: bold; position: relative; float: right;" color="deepskyblue">"FOREVER YOUNG"</font>
+		<br>
+
+		VIC GARCIA 
+		
+	</div> -->
+
+	<div id="centerimage">
+		<figure>
+		<img id="cityimage" src="Miami.png"></img>
+		<figcaption>November 12<sup style="font-size:8.0pt">th </sup>& 13<sup style="font-size:8.0pt">th</sup> 2021</figcaption>
+		</figure>
+    </div>
+
+    <div id="footer">The art audience is the worst audience in the world. <br>It's overly educated, it's conservative, it's out to criticize not to understand<br> and it never has any fun. - David Hammons</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+// 儲存各國名稱及時區
+var data=[
+  {
+    country:"NEW YORK",
+    timeZone:"America/New_York",
+  },
+  {
+    country:"LONDON",
+    timeZone:"Europe/London"
+  },
+  {
+    country:"BANGKOK",
+    timeZone:"Asia/Bangkok"
+  },
+  {
+    country:"TAIWAN",
+    timeZone:"Asia/Taipei"
+  },
+  {
+    country:"SYDNEY",
+    timeZone:"Australia/Sydney"
+  }
+]
+
+//儲存時間顯示格式
+option={day:"2-digit",month:"short",year:"numeric",hour12:false,hour:"numeric",minute:"2-digit"};
+
+//DOM
+var timeTable=document.querySelector('.timeZone');
+var timeTable2=document.querySelector('.timeZone2');
+
+
+function clockMaker(){
+  //清除 timeTable內所有節點
+  timeTable.innerHTML='';
+  //new Date
+  let now=new Date();
+  //將 timeZone 加入 option中
+  for(let i=0;i<data.length;i++){
+    option.timeZone=data[i].timeZone;
+    let str=now.toLocaleString('en',option);
+
+    //切割時間字串
+    let splice=str.split(',')
+    let time=splice[2];
+    
+    //組字串
+    var tr=document.createElement('string');
+    tr.innerHTML=` <td><p class="time">${time}</p>
+                  `
+    //新增 tr節點   
+    timeTable.appendChild(tr);
+
+    if(i==0){
+        var x = document.getElementById('header1');
+        x.style.text = tr;
+        break;
+
+    }
+    
+  }
+  for(let i=1;i<data.length;i++){
+    option.timeZone2=data[i].timeZone2;
+    let str=now.toLocaleString('en',option);
+
+    //切割時間字串
+    let splice=str.split(',')
+    let time=splice[2];
+    
+    //組字串
+    var tr2=document.createElement('string');
+    tr2.innerHTML=` <td><p class="time">${time}</p>
+                  `
+    //新增 tr節點   
+    timeTable2.appendChild(tr);
+
+    if(i==1){
+        var y = document.getElementById('header2');
+        y.style.text = tr2;
+        break;
+
+    }
+    
+  }
+  
+}
+//每半分鐘更新一次
+clockMaker();
+setInterval(clockMaker,30000);
+
+</script>
+</body>
+
+</html>
